@@ -16,7 +16,7 @@ class Ship:
         self.movingLeft = False
         self.movingRight = False
     
-    def update(self):
+    def update(self) -> None:
         if self.movingRight and self.rectangle.right < self.screenRectangle.right:
             self.x += self.settings.shipSpeed
         if self.movingLeft and self.rectangle.left > 0:
@@ -24,6 +24,6 @@ class Ship:
             
         self.rectangle.x = self.x
     
-    def blitme(self): # def: bit blit = Bit blit is a data operation commonly used in computer graphics in which several bitmaps are combined into one using a boolean function.
+    def blitme(self) -> None: # def: bit blit = Bit blit is a data operation commonly used in computer graphics in which several bitmaps are combined into one using a boolean function.
         self.screen.blit(self.image, self.rectangle) # coulda just called it draw 🐢🐢🐢
         
