@@ -7,7 +7,7 @@ class Ship:
         self.screenRectangle = alienInvasionGame.screen.get_rect()
         
         self.image = pygame.image.load('images/ship.bmp')
-        self.rectangle = self.image.get_rect() # get rectangle? that's pretty rude
+        self.rectangle = self.image.get_rect() # get rect? that's pretty rude
         
         self.rectangle.midbottom = self.screenRectangle.midbottom
         
